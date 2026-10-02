@@ -170,7 +170,150 @@ button{cursor:pointer}
 .leaderPts span{font-size:8px;font-weight:950;color:#aaa}
 .leaderRow:first-child{border-color:#F58426;background:#251306}
 .leaderRow:first-child .leaderRank,.leaderRow:first-child .leaderPts b{color:#F58426}
+/* iPHONE LAYOUT ONLY — NO GAME/TIMER/STORAGE LOGIC CHANGED */
+@media (max-width:430px){
+  html,body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+  }
 
+  .app{
+    width:100%;
+    max-width:100%;
+    padding:4px;
+  }
+
+  .modeTabs{
+    grid-template-columns:1fr 1fr;
+    gap:4px;
+  }
+
+  .modeTab{
+    min-width:0;
+    font-size:13px;
+  }
+
+  .top{top:47px}
+
+  .controls{
+    grid-template-columns:1fr;
+  }
+
+  .qs,.acts{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  .clock{font-size:44px}
+
+  .nudges{
+    flex-wrap:wrap;
+  }
+
+  .gameNav{
+    grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+  }
+
+  .gameNav button{
+    min-width:0;
+    padding:0 5px;
+    font-size:9px;
+  }
+
+  .gameNavPos{font-size:8px}
+
+  .gameBar{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .gameBar .gameCell:first-child{
+    grid-column:1/-1;
+  }
+
+  /* THIS IS THE MAIN PHONE FIX */
+  .players{
+    grid-template-columns:1fr;
+    gap:5px;
+  }
+
+  .card{
+    width:100%;
+    min-width:0;
+    padding:9px 10px;
+    grid-template-columns:minmax(0,1fr) auto;
+  }
+
+  .name{
+    font-size:27px;
+    min-width:0;
+    overflow-wrap:anywhere;
+  }
+
+  .time{font-size:29px}
+
+  .statusBtn{
+    min-width:72px;
+  }
+
+  .scoreTools{
+    grid-template-columns:82px minmax(0,1fr);
+    gap:6px;
+    min-width:0;
+  }
+
+  .pointsBox{min-width:0}
+
+  .scoreBtns{
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    min-width:0;
+  }
+
+  .scoreBtns button{
+    min-width:0;
+    padding:0 2px;
+    font-size:11px;
+  }
+
+  .scoreBtns button.undo{
+    font-size:9px;
+  }
+
+  .bottom{
+    grid-template-columns:1fr;
+  }
+
+  .clipCats{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .clipPlayGrid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .clipTools{
+    grid-template-columns:1fr 1fr 1fr;
+  }
+
+  .clipTool{
+    min-width:0;
+    padding:0 4px;
+  }
+
+  .clipHead{
+    display:block;
+  }
+
+  .clipCall{
+    margin-top:5px;
+    white-space:normal;
+  }
+
+  .clipStage{
+    width:100%;
+    max-width:100%;
+  }
+}
 </style>
 </head>
 <body>
